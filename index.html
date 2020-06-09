@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissors</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var things = ["rock", "paper", "scissors"];
+
+      function computerPlay() {
+        return things[Math.floor(Math.random() * things.length)];
+      }
+
+      function playRound(playerSelection, computerSelection) {
+        if (
+          playerSelection.lowerCase() == "rock" &&
+          computerSelection == "paper"
+        ) {
+          alert("You Lose! Paper beats Rock");
+        } else if (
+          playerSelection.lowerCase() == "paper" &&
+          computerSelection == "rock"
+        ) {
+          alert("You win! Paper beats Rock");
+        } else if (
+          playerSelection.lowerCase() == "rock" &&
+          computerSelection == "paper"
+        ) {
+          alert("You Lose! Paper beats Rock");
+        } else if (
+          playerSelection.lowerCase() == "scissors" &&
+          computerSelection == "paper"
+        ) {
+          alert("You win! Scissors beat paper");
+        } else if (
+          playerSelection.lowerCase() == "scissors" &&
+          computerSelection == "rock"
+        ) {
+          alert("You Lose! Rock beats Scissors");
+        } else if (
+          playerSelection.lowerCase() == "rock" &&
+          computerSelection == "scissors"
+        ) {
+          alert("You win! Scissors  beat rock");
+        }
+      }
+    </script>
+  </body>
+</html>
