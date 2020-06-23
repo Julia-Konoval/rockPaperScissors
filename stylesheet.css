@@ -1,12 +1,32 @@
 html {
-  background-image: url("game.jpeg");
+  background-image: url("game.jpg");
   background-repeat: no-repeat;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
 #player-score {
-  margin-left: auto;
-  margin-right: auto;
-  color: brown;
+  line-height: 50px;
+  text-align: center;
+  /*Added*/
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  background-color: white;
+  opacity: 0.5;
+  width: 60%;
+}
+h1 {
+  line-height: 100px;
+  color: yellow;
+  font-size: 4.4em;
+  text-align: center;
+  margin: 20%;
+  margin-left: 100px;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 1;
 }
