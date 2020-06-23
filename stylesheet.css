@@ -1,0 +1,12 @@
+html {
+  background-image: url("game.jpeg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+#player-score {
+  margin-left: auto;
+  margin-right: auto;
+  color: brown;
+}
