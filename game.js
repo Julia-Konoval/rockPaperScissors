@@ -59,21 +59,28 @@ function playRound(computerSelection, playerSelection) {
 function displayScore() {
   document.querySelector("#player-score").textContent = results;
   document.querySelector("#computer-score").textContent = computerResults;
-}
-// function representativeImages() {
-//   document.querySelector("#rock").onclick = options[0];
-//   document.querySelector("#paper").onclick = options[1];
-//   document.querySelector("#scissors").onclick = options[2];
-// }
 
-function game() {
-  for (var i = 0; i < 6; i++) {
+  document.querySelector("#rock").addEventListener("click", () => {
     let computerSelection = options[Math.floor(Math.random() * options.length)];
-    console.log(computerSelection);
-    displayScore();
-    playRound(computerSelection);
-  }
+    const playerSelection = "rock";
+    console.log("Hi");
+    playRound(computerSelection, playerSelection);
+  });
+  document.querySelector("#paper").addEventListener("click", () => {
+    let computerSelection = options[Math.floor(Math.random() * options.length)];
+    const playerSelection = "paper";
+    console.log("Hi");
+    playRound(computerSelection, playerSelection);
+  });
+  document.querySelector("#scissors").addEventListener("click", () => {
+    let computerSelection = options[Math.floor(Math.random() * options.length)];
+    const playerSelection = "scissors";
+    console.log("Hi");
+    playRound(computerSelection, playerSelection);
+  });
+  console.log(computerSelection);
+  displayScore();
+  playRound(computerSelection);
 }
-
 game();
 alert(results);
