@@ -27,6 +27,9 @@ function playRound(computerSelection) {
 function displayScore() {
   document.querySelector("#player-score").textContent = results;
 }
+function representativeImages() {
+  document.querySelector("rock").textContent = options[0];
+}
 
 function game() {
   for (var i = 0; i < 6; i++) {
