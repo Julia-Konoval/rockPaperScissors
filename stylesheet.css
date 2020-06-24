@@ -1,5 +1,5 @@
 body {
-  background-image: url("game.jpg");
+  background-image: url("images/game.jpg");
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
@@ -14,7 +14,7 @@ body {
   width: 60%;
   margin: auto;
   border-radius: 20px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 #player-score {
@@ -22,4 +22,44 @@ body {
   line-height: 150px;
   font-size: 10.4em;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
+  margin-top: 0;
+}
+#computer-score {
+  color: yellow;
+  line-height: 150px;
+  font-size: 10.4em;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
+  margin-top: 0;
+}
+p {
+  color: black;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
+  line-height: 150px;
+  font-size: 5em;
+  font-family: "Piedra", cursive;
+}
+#userResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#computerResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#representatives {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#rock {
+  height: 230px;
+  width: 230px;
+}
+#paper {
+  height: 230px;
+}
+#scissors {
+  height: 230px;
 }

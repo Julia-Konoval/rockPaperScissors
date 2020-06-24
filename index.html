@@ -9,12 +9,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body onload="script();">
-    <div id="container">
-      <h1 id="player-score">0</h1>
+    <div id="representatives">
+      <li>
+        <ul>
+          <img id="rock" src="images/Stickers-tool.jpg" alt="rock" />
+        </ul>
+        <ul>
+          <img id="paper" src="images/paper.jpg" alt="paper" />
+        </ul>
+        <ul>
+          <img id="scissors" src="images/scissors.jpg" alt="scissors" />
+        </ul>
+      </li>
     </div>
-    <!-- <script src="game.js"></script> -->
+    <div id="container">
+      <div id="userResults">
+        <p>You:</p>
+        <h1 id="player-score">0</h1>
+      </div>
+      <div id="computerResults">
+        <p>Computer:</p>
+        <h1 id="computer-score">0</h1>
+      </div>
+    </div>
+    <script src="game.js"></script>
   </body>
 </html>
