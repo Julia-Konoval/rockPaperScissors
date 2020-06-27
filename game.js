@@ -1,6 +1,7 @@
 let options = ["rock", "paper", "scissors"];
 let yourResults = 0;
 let computerResults = 0;
+let computerSelection = ComputerSelection();
 
 // function playRound(computerSelection) {
 //   playerSelection = prompt("Rock, paper, scissors?");
@@ -55,33 +56,37 @@ function playRound(computerSelection, playerSelection) {
     yourResults++;
   }
 }
+function ComputerSelection() {
+  let computerSelection = choice[Math.floor(Math.random() * 3)];
+  return computerSelection;
+}
 
 function displayScore() {
   document.querySelector("#player-score").textContent = yourResults;
   document.querySelector("#computer-score").textContent = computerResults;
-
-  document.querySelector("#rock").addEventListener("click", () => {
-    let computerSelection = options[Math.floor(Math.random() * options.length)];
-    const playerSelection = "rock";
-    console.log("Hi");
-    playRound(computerSelection, playerSelection);
-  });
-  document.querySelector("#paper").addEventListener("click", () => {
-    let computerSelection = options[Math.floor(Math.random() * options.length)];
-    const playerSelection = "paper";
-    console.log("Hi");
-    playRound(computerSelection, playerSelection);
-  });
-  document.querySelector("#scissors").addEventListener("click", () => {
-    let computerSelection = options[Math.floor(Math.random() * options.length)];
-    const playerSelection = "scissors";
-    console.log("Hi");
-    playRound(computerSelection, playerSelection);
-  });
-  console.log(computerSelection);
-  displayScore();
-  playRound(computerSelection);
 }
+
+// Rock Pick
+document.querySelector("#rock").addEventListener("click", () => {
+  // let computerSelection = options[Math.floor(Math.random() * options.length)];
+  const playerSelection = options[0];
+  console.log("Hi");
+});
+document.querySelector("#paper").addEventListener("click", () => {
+  // let computerSelection = options[Math.floor(Math.random() * options.length)];
+  const playerSelection = options[1];
+  console.log("Hi");
+});
+document.querySelector("#scissors").addEventListener("click", () => {
+  // let computerSelection = options[Math.floor(Math.random() * options.length)];
+  const playerSelection = options[2];
+  console.log("Hi");
+});
+
+playRound(computerSelection, playerSelection);
+// console.log(computerSelection);
+displayScore();
+// playRound(computerSelection);
 
 console.log(yourResults);
 console.log(computerResults);
