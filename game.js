@@ -7,17 +7,17 @@ function playRound(computerSelection, playerSelection) {
   console.log(`computer:${computerSelection}`);
   console.log(`player:${playerSelection}`);
   if (computerSelection === "rock" && playerSelection === "paper") {
-    yourResults++;
+    playerResults++;
   } else if (computerSelection === "rock" && playerSelection === "scissors") {
     computerResults++;
   } else if (computerSelection === "paper" && playerSelection === "rock") {
     computerResults++;
   } else if (computerSelection === "paper" && playerSelection === "scissors") {
-    yourResults++;
+    playerResults++;
   } else if (computerSelection === "scissors" && playerSelection === "paper") {
     computerResults++;
   } else if (computerSelection === "scissors" && playerSelection === "rock") {
-    yourResults++;
+    playerResults++;
   } else {
     return "It's a tie";
   }
