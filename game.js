@@ -1,10 +1,9 @@
 let options = ["rock", "paper", "scissors"];
-let yourResults = 0;
+let playerResults = 0;
 let computerResults = 0;
 let roundsPlayed = 0;
 
 function playRound(computerSelection, playerSelection) {
-  playerSelection = playerSelection.toLowerCase();
   console.log(`computer:${computerSelection}`);
   console.log(`player:${playerSelection}`);
   if (computerSelection === "rock" && playerSelection === "paper") {
@@ -24,8 +23,8 @@ function playRound(computerSelection, playerSelection) {
   }
 }
 function displayScore() {
-  document.querySelector("#player-score").textContent = yourResults;
-  document.querySelector("#computer-score").textContent = yourResults;
+  document.querySelector("#player-score").textContent = playerResults;
+  document.querySelector("#computer-score").textContent = computerResults;
 }
 
 // Rock Pick
@@ -53,5 +52,5 @@ document.querySelector("#scissors").addEventListener("click", () => {
 displayScore();
 // playRound(computerSelection);
 
-console.log(yourResults);
+console.log(playerResults);
 console.log(computerResults);
