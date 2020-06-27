@@ -57,7 +57,7 @@ function playRound(computerSelection, playerSelection) {
 }
 
 function displayScore() {
-  document.querySelector("#player-score").textContent = results;
+  document.querySelector("#player-score").textContent = yourResults;
   document.querySelector("#computer-score").textContent = computerResults;
 
   document.querySelector("#rock").addEventListener("click", () => {
@@ -82,5 +82,6 @@ function displayScore() {
   displayScore();
   playRound(computerSelection);
 }
-game();
-alert(results);
+
+console.log(yourResults);
+console.log(computerResults);
