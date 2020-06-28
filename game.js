@@ -26,8 +26,15 @@ function displayScore() {
   document.querySelector("#player-score").textContent = playerResults;
   document.querySelector("#computer-score").textContent = computerResults;
 }
-var sound = new Audio();
-sound.src = "audio/R";
+var rockSound = new Audio();
+rockSound.src = "audio/rock.mp3";
+
+var paperSound = new Audio();
+paperSound.src = "audio/paper.mp3";
+
+var scissorsSound = new Audio();
+scissorsSound.src = "audio/scissors.mp3";
+
 // Rock Pick
 document.querySelector("#rock").addEventListener("click", () => {
   let computerSelection = options[Math.floor(Math.random() * options.length)];
