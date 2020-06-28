@@ -53,13 +53,17 @@ p {
   flex-direction: row;
   justify-content: space-around;
 }
-#rock {
+.options {
   height: 230px;
   width: 230px;
 }
-#paper {
-  height: 230px;
+.options:hover {
+  border-radius: 50%;
 }
-#scissors {
-  height: 230px;
+
+.options:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 0 5px rgb(5, 5, 5);
+  transform: translateY(4px);
+  transition: margin-right 2s;
 }

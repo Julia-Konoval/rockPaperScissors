@@ -26,14 +26,15 @@ function displayScore() {
   document.querySelector("#player-score").textContent = playerResults;
   document.querySelector("#computer-score").textContent = computerResults;
 }
-
-// Rock Pick
-document.querySelector("#rock").addEventListener("click", () => {
-  let computerSelection = options[Math.floor(Math.random() * options.length)];
-  const playerSelection = options[0];
-  playRound(computerSelection, playerSelection);
-  displayScore();
-});
+var sound = new Audio();
+sound.src =
+  // Rock Pick
+  document.querySelector("#rock").addEventListener("click", () => {
+    let computerSelection = options[Math.floor(Math.random() * options.length)];
+    const playerSelection = options[0];
+    playRound(computerSelection, playerSelection);
+    displayScore();
+  });
 
 document.querySelector("#paper").addEventListener("click", () => {
   let computerSelection = options[Math.floor(Math.random() * options.length)];
