@@ -2,6 +2,11 @@ let options = ["rock", "paper", "scissors"];
 let playerResults = 0;
 let computerResults = 0;
 let roundsPlayed = 0;
+let imagesArray = [
+  "images/Stickers-tool.jpg",
+  "images/paper.jpg",
+  "images/scissors.jpg",
+];
 
 function playRound(computerSelection, playerSelection) {
   console.log(`computer:${computerSelection}`);
@@ -55,7 +60,17 @@ document.querySelector("#scissors").addEventListener("click", () => {
   playRound(computerSelection, playerSelection);
   displayScore();
 });
+function displayComputerChoice() {
+  let computerSelection = options[Math.floor(Math.random() * options.length)];
 
+  if (computerSelection === options[0]) {
+    $("#computerRock").trigger("click");
+  } else if (computerSelection === options[1]) {
+    $("#computerPaper").trigger("click");
+  } else {
+    $("#computerScissors").trigger("click");
+  }
+}
 // console.log(computerSelection);
 displayScore();
 // playRound(computerSelection);

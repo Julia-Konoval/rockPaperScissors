@@ -47,6 +47,7 @@
         </ul>
       </li>
     </div>
+
     <div id="container">
       <div id="userResults">
         <p>You:</p>
@@ -56,6 +57,40 @@
         <p>Computer:</p>
         <h1 id="computer-score">0</h1>
       </div>
+    </div>
+    <div id="computer-decisions">
+      <li>
+        <ul>
+          <img
+            id="computerRock"
+            name="computerRock"
+            class="computer-options"
+            src="images/Stickers-tool.jpg"
+            alt="rock"
+            onmousedown="rockSound.play()"
+          />
+        </ul>
+        <ul>
+          <img
+            id="computerPaper"
+            name="computerPaper"
+            class="computer-options"
+            src="images/paper.jpg"
+            alt="paper"
+            onmousedown="paperSound.play()"
+          />
+        </ul>
+        <ul>
+          <img
+            id="computerScissors"
+            name="computerScissors"
+            class="computer-options"
+            src="images/scissors.jpg"
+            alt="scissors"
+            onmousedown="scissorsSound.play()"
+          />
+        </ul>
+      </li>
     </div>
     <script src="game.js"></script>
   </body>

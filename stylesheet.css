@@ -52,6 +52,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-right: 7vh;
 }
 .options {
   height: 230px;
@@ -63,6 +64,27 @@ p {
 
 .options:active {
   /* background-color: #3e8e41; */
+  box-shadow: 0 5px rgb(5, 5, 5);
+  transform: translateY(4px);
+  transition: margin-right 2s;
+}
+#computer-decisions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 5vh;
+  margin-left: 2vh;
+}
+.computer-options {
+  height: 230px;
+  width: 230px;
+}
+
+.computer-options:hover {
+  border-radius: 50%;
+}
+
+.computer-options:active {
   box-shadow: 0 5px rgb(5, 5, 5);
   transform: translateY(4px);
   transition: margin-right 2s;
