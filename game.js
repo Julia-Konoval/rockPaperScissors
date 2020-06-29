@@ -64,14 +64,17 @@ function displayComputerChoice() {
   let computerSelection = options[Math.floor(Math.random() * options.length)];
 
   if (computerSelection === options[0]) {
-    $("#computerRock").trigger("click");
+    document.getElementById("computerRock").click();
   } else if (computerSelection === options[1]) {
-    $("#computerPaper").trigger("click");
+    document.getElementById("computerPaper").click();
   } else {
-    $("#computerScissors").trigger("click");
+    document.getElementById("computerScissors").click();
+    // $("#computerScissors").trigger("click");
   }
+  console.log(computerSelection);
 }
 // console.log(computerSelection);
+displayComputerChoice();
 displayScore();
 // playRound(computerSelection);
 
