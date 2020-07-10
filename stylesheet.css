@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/game.jpg");
+  background-image: url('images/game.jpg');
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
@@ -36,7 +36,7 @@ p {
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
   line-height: 150px;
   font-size: 5em;
-  font-family: "Piedra", cursive;
+  font-family: 'Piedra', cursive;
 }
 #userResults {
   display: flex;
@@ -68,6 +68,16 @@ p {
   transform: translateY(4px);
   transition: margin-right 2s;
 }
+#reset-button {
+  position: absolute;
+  bottom: 70px;
+  left: 45%;
+  height: 8vh;
+  width: 14vh;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Piedra', cursive;
+}
 #computer-decisions {
   display: flex;
   flex-direction: row;
@@ -80,12 +90,31 @@ p {
   width: 230px;
 }
 
-.computer-options:hover {
-  border-radius: 50%;
+/* stylesheet.css | file:///Users/ozansozuoz/Downloads/rockPaperScissors-master/stylesheet.css */
+
+#container {
+  flex-direction: column;
 }
 
-.computer-options:active {
-  box-shadow: 0 5px rgb(5, 5, 5);
-  transform: translateY(4px);
-  transition: margin-right 2s;
+#reset-button {
+  /* position: absolute; */
+}
+
+/* Element | file:///Users/ozansozuoz/Downloads/rockPaperScissors-master/index.html */
+
+#score-container {
+  display: flex;
+}
+
+/* Element | file:///Users/ozansozuoz/Downloads/rockPaperScissors-master/index.html */
+
+#reset-button {
+  font-size: 22px;
+  padding: 6px;
+}
+
+#userResults,
+#computerResults {
+  margin-left: 10px;
+  margin-right: 10px;
 }
