@@ -1,54 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RockPaperScissors</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div id="representatives">
-      <li>
-        <ul>
-          <img
-            id="rock"
-            class="options"
-            src="images/Stickers-tool.jpg"
-            alt="rock"
-            onmousedown="rockSound.play()"
-          />
-        </ul>
-        <ul>
-          <img
-            id="paper"
-            class="options"
-            src="images/paper.jpg"
-            alt="paper"
-            onmousedown="paperSound.play()"
-          />
-        </ul>
-        <ul>
-          <img
-            id="scissors"
-            class="options"
-            src="images/scissors.jpg"
-            alt="scissors"
-            onmousedown="scissorsSound.play()"
-          />
-        </ul>
-      </li>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RockPaperScissors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet" />
+</head>
 
-    <div id="container">
+<body>
+  <div id="representatives">
+    <li>
+      <ul>
+        <img id="rock" class="options" src="images/Stickers-tool.jpg" alt="rock" onmousedown="rockSound.play()" />
+      </ul>
+      <ul>
+        <img id="paper" class="options" src="images/paper.jpg" alt="paper" onmousedown="paperSound.play()" />
+      </ul>
+      <ul>
+        <img id="scissors" class="options" src="images/scissors.jpg" alt="scissors"
+          onmousedown="scissorsSound.play()" />
+      </ul>
+    </li>
+  </div>
+
+  <div id="container">
+    <h3 id="current-round">Current round:</h3>
+    <div id="score-container">
       <div id="userResults">
         <p>You:</p>
         <h1 id="player-score">0</h1>
@@ -58,40 +38,26 @@
         <h1 id="computer-score">0</h1>
       </div>
     </div>
-    <div id="computer-decisions">
-      <li>
-        <ul>
-          <img
-            id="computerRock"
-            name="computerRock"
-            class="computer-options"
-            src="images/Stickers-tool.jpg"
-            alt="rock"
-            onmousedown="rockSound.play()"
-          />
-        </ul>
-        <ul>
-          <img
-            id="computerPaper"
-            name="computerPaper"
-            class="computer-options"
-            src="images/paper.jpg"
-            alt="paper"
-            onmousedown="paperSound.play()"
-          />
-        </ul>
-        <ul>
-          <img
-            id="computerScissors"
-            name="computerScissors"
-            class="computer-options"
-            src="images/scissors.jpg"
-            alt="scissors"
-            onmousedown="scissorsSound.play()"
-          />
-        </ul>
-      </li>
-    </div>
-    <script src="game.js"></script>
-  </body>
+    <input type="reset" id="reset-button">
+  </div>
+
+  <div id="computer-decisions">
+    <li>
+      <ul>
+        <img id="computer-rock" name="computerRock" class="computer-options" src="images/Stickers-tool.jpg" alt="rock"
+          onmousedown="rockSound.play()" />
+      </ul>
+      <ul>
+        <img id="computer-paper" name="computerPaper" class="computer-options" src="images/paper.jpg" alt="paper"
+          onmousedown="paperSound.play()" />
+      </ul>
+      <ul>
+        <img id="computer-scissors" name="computerScissors" class="computer-options" src="images/scissors.jpg"
+          alt="scissors" onmousedown="scissorsSound.play()" />
+      </ul>
+    </li>
+  </div>
+  <script src="game.js"></script>
+</body>
+
 </html>
